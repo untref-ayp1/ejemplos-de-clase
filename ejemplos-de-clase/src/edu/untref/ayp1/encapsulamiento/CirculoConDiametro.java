@@ -2,25 +2,24 @@ package edu.untref.ayp1.encapsulamiento;
 
 public class CirculoConDiametro {
 	private double diametro;
-	private double PI = Math.PI;
 	
-	public CirculoConDiametro(double diametro) {
-		this.diametro = diametro;
+	public CirculoConDiametro(double diametroInicial) {
+		diametro = diametroInicial;
 	}
 	
 	public double obtenerRadio() {
-		return this.diametro / 2;
+		return diametro / 2;
 	}
 	
 	public double obtenerDiametro() {
-		return this.diametro;
+		return diametro;
 	}
 	
 	public double obtenerPerimetro() {
-		return 2 * PI * this.obtenerRadio();
+		return 2 * Math.PI * this.obtenerRadio();
 	}
 	
 	public double obtenerArea() {
-		return PI * this.obtenerRadio() * this.obtenerRadio();
+		return Math.PI * obtenerRadio() * obtenerRadio();
 	}
 }
