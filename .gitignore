@@ -1,0 +1,8 @@
+*/*.class
+*/*.jar
+*/.settings
+*/.classpath
+*/.project
+*/greenfoot/*.jar
+*/bin
+/.metadata/
